@@ -26,6 +26,7 @@ class Example extends React.Component {
       counter: 0,
       inputValue: '',
       buttonWasClicked: '',
+      motto: 'to complete this project',
     };
 
     // React events are called directly from DOM event handlers
@@ -75,6 +76,10 @@ class Example extends React.Component {
     this.setState({ buttonWasClicked: buttonName });
   }
 
+  updateMotto() {
+    // Update the motto with the current input value
+    this.setState({ motto: this.state.inputValue });
+  }
   /* eslint-disable-next-line class-methods-use-this */
   outOfBandJSX(option) {
     let optionJSX;
@@ -104,6 +109,24 @@ class Example extends React.Component {
 
         <div className="motto-update">
           {/* Your problem #1 motto displaying and updating widget goes here */}
+          <p className="name">CodeCrafters</p>
+          <p className="motto">{this.state.motto}</p>
+          
+          {/* Input field for updating the motto */}
+          <input
+            type="text"
+            value={this.state.inputValue}
+            onChange={this.handleChangeBound}
+            placeholder="New Motto"
+          />
+
+          {/* Button to update the motto */}
+          <button
+            type="button"
+            onClick={() => this.updateMotto()}
+          >
+            Update Motto
+          </button>
         </div>
 
         <p>
