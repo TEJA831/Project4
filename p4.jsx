@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import States from './components/states/States';
 import Example from './components/example/Example';
 
-class P4 extends React.Component {
+class SwitchView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,4 +27,4 @@ class P4 extends React.Component {
   }
 }
 
-ReactDOM.render(<P4 />, document.getElementById('reactapp'));
+ReactDOM.render(<SwitchView />, document.getElementById('reactapp'));
