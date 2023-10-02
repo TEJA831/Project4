@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './States.css';
-import Header from "../header/Header";
 
 class States extends Component {
   constructor(props) {
@@ -25,7 +24,6 @@ class States extends Component {
 
     return (
       <div>
-        <Header />
         <h2>States</h2>
         <input
           type="text"
