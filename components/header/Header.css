@@ -1,0 +1,46 @@
+/* components/header/Header.css */
+
+.header {
+    background-color: #498E86FF; /* Customize the background color */
+    color: #FFFFFFFF; /* Customize the text color */
+    padding: 20px;
+    width: fit-content(100%);
+    text-align: center;
+    background: linear-gradient(to bottom, #498E86FF, #bdc3c7);
+    transform: scale(1.05); /* Scale on hover */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture {
+    width: 100px; /* Customize the profile picture size */
+    height: 100px;
+    border-radius: 50%; /* Make the profile picture round */
+    margin-right: 20px; /* Adjust spacing between picture and text */
+    transform: rotate(360deg);
+    animation: slideshow 10s linear infinite;
+}
+
+.header-text {
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+}
+
+.header-text h1 {
+    font-size: 24px; /* Customize the font size of your name */
+    margin: 0;
+    align-content: end;
+    font-family: "Copperplate Gothic Bold";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+}
+
+.header-text p {
+    font-size: 16px; /* Customize the font size of your motto */
+    margin: 0;
+    align-content: end;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+}
