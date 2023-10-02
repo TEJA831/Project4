@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import States from './components/states/States';
 import Example from './components/example/Example';
+import './p4.css';
 
 class SwitchView extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class SwitchView extends React.Component {
     var {showExampleView} = this.state;
     return (
       <div>
-        <button onClick={this.handleView}>Switch to {showExampleView ? 'States' : 'Example'}</button>
+        <button className='custom-button' onClick={this.handleView}>Switch to {showExampleView ? 'States' : 'Example'}</button>
         {showExampleView ? <Example /> : <States />}
       </div>
     );
