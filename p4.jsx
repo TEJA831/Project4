@@ -8,7 +8,7 @@ class P4 extends React.Component {
     super(props);
     this.state = {
       showExampleView: true,
-    }
+    };
     this.handleView = this.handleView.bind(this);
   }
 
