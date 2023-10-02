@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { HashRouter, Route, Link } from "react-router-dom";
 import States from './components/states/States';
 import Example from './components/example/Example';
-import Header from './components/header/Header';
 import './p5.css';
 
 class P5 extends React.Component {
@@ -24,7 +23,6 @@ class P5 extends React.Component {
     const { showExampleView } = this.state;
     return (
       <HashRouter> 
-        <Header />
         <div>
           <div className="toolbar"><Link to="/states" className="toolbar-link">States</Link></div>
           <br />
