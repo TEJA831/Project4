@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { HashRouter, Route, Link } from "react-router-dom";
 import States from './components/states/States';
 import Example from './components/example/Example';
-
+import Header from './components/header/Header';
 class P5 extends React.Component {
   constructor(props) {
     super(props);
@@ -21,7 +21,8 @@ class P5 extends React.Component {
   render() {
     const { showExampleView } = this.state;
     return (
-      <HashRouter>   
+      <HashRouter> 
+        <Header />
         <div>
           <Link to="/states">States</Link>
           <br />
