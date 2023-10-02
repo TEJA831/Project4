@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './States.css';
 
-
 class States extends Component {
   constructor(props) {
     super(props);
@@ -17,11 +16,10 @@ class States extends Component {
 
   render() {
     // Call the models.states() function to get the array of state names
-    const stateNames = models.states();
+    const stateNames = window.models.states();
 
     // Filter the state names based on the current substring
-    const filteredStates = stateNames.filter((state) =>
-      state.toLowerCase().includes(this.state.substring.toLowerCase())
+    const filteredStates = stateNames.filter((state) => state.toLowerCase().includes(this.state.substring.toLowerCase())
     );
 
     return (
