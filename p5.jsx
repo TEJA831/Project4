@@ -21,15 +21,15 @@ class P5 extends React.Component {
   render() {
     const { showExampleView } = this.state;
     return (
-      <div>
-        <HashRouter>
+      <HashRouter>   
+        <div>
+          <Link to="/states">States</Link>
+          <br />
+          <Link to="/example">Example</Link>
           <Route path="/states" component={States} />
           <Route path="/example" component={Example} />
-          <Link to="/states">States</Link>
-          <Link to="/example">Example</Link>
-        </HashRouter>
-      </div>
-      
+        </div>
+      </HashRouter>
     );
   }
 }
