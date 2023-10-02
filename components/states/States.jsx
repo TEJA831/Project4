@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './States.css';
-import Header from "./header/Header";
+import Header from "../header/Header";
 
 class States extends Component {
   constructor(props) {
