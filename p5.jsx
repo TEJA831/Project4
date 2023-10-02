@@ -24,9 +24,9 @@ class P5 extends React.Component {
       <HashRouter> 
         <Header />
         <div>
-          <Link to="/states">States</Link>
+          <div className="toolbar"><Link to="/states" className="toolbar-link">States</Link></div>
           <br />
-          <Link to="/example">Example</Link>
+          <div className="toolbar"><Link to="/example" className="toolbar-link">Example</Link></div>
           <Route path="/states" component={States} />
           <Route path="/example" component={Example} />
         </div>
