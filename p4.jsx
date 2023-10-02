@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import States from './components/states/States';
+import Header from './components/header/Header';
 import Example from './components/example/Example';
 import './p4.css';
+
+ReactDOM.render(
+  <Header />,
+  document.getElementById('reactheader')
+);
 
 class SwitchView extends React.Component {
   constructor(props) {

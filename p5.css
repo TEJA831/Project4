@@ -1,3 +1,7 @@
+.container {
+  margin-top: 10px;
+}
+
 .toolbar {
     width: 90px;
     background-color: #333;

@@ -1,5 +1,6 @@
 /* Style for the button */
 .custom-button {
+    margin-top: 10px;
     background-color: gray;
     color: #fff;
     border: none; 
